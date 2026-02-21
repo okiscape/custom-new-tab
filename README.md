@@ -19,7 +19,7 @@ It's have some features:
 To replace default page with your own you should:
 1. Replace `./src/page/` to your rendered page
 2. Zip entire `./src/` folder in `*.xpi` archive
-It's content should look like:
+It's content should look like:\
 `my-archive@me.xpi`\
  | - `manifest.json`\
  | - `page/`\
