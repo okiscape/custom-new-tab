@@ -20,9 +20,9 @@ To replace default page with your own you should:
 1. Replace `./src/page/` to your rendered page
 2. Zip entire `./src/` folder in `*.xpi` archive
 It's content should look like:\
-`my-archive@me.xpi`\
- | - `manifest.json`\
- | - `page/`\
- | + - `index.html`
+my-archive.xpi\
+ | - manifest.json\
+ | - page/\
+ | + - index.html
 3. Move archive into Firefox's window to import your extension.
 If previous version of extension was already imported - firefox will replace it
