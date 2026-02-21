@@ -211,6 +211,7 @@ input {
 }
 
 html {
+  background-color: #000;
   background-image: var(--bg-url); background-repeat: no-repeat;
   background-size: cover; background-position: center;
   height: 100%; width: 100%;
