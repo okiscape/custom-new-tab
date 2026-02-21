@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "Custom New Tab Page",
+  "version": "0.5",
+  "description": "Replaces the new tab page with a custom one.",
+  "chrome_url_overrides": {
+    "newtab": "page/index.html"
+  },
+  "permissions": [
+    "storage"
+  ],
+  "applications": {
+    "gecko": {
+      "id": "custom-newtab@okiscape"
+    }
+  }
+}
