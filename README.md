@@ -9,7 +9,7 @@ The default page in `./page/` written using `vue` + `vite`.
 It's have some features: 
  - Date & time(with cool digit transitions)
  - To-do list(works across tabs via `Pinia` stores) (click to your To-do to delete it)
- - Wallpapers shuffle on reload(or new tab) (wallpapers that in `./page/wallpapers/`)
+ - Wallpapers shuffle on reload(or new tab) (wallpapers that in `./page/wallpapers/`, so you can just drop pictures in this folder)
 
 **Preview:**
 ![Default page preview](.readme/pagepreview.gif)
@@ -20,9 +20,9 @@ To replace default page with your own you should:
 1. Replace `./src/page/` to your rendered page
 2. Zip entire `./src/` folder in `*.xpi` archive
 It's content should look like:
-my-archive@me.xpi\
- | - manifest.json\
- | - page/\
- | + - index.html
+`my-archive@me.xpi`\
+ | - `manifest.json`\
+ | - `page/`\
+ | + - `index.html`
 3. Move archive into Firefox's window to import your extension.
-If previous version of extension was already imported - firefox will replace it automatically.
+If previous version of extension was already imported - firefox will replace it
