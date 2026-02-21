@@ -1,5 +1,5 @@
 # Custom New-Tab
-> Firefox extention that allows you to create your own page and set it as a "new tab" page.
+> Firefox(& etc)/Chromium-based browsers extention that allows you to create your own page and set it as a "new tab" page.
 
 ## How it works
 Extension uses its internal pages for rendering by default. So, if you want to change your newbuilt extension even a little bit - you have to rebuilt it (or open it as zip and edit).
@@ -25,4 +25,4 @@ It's content should look like:\
  | - `page/`\
  | + - `index.html`
 3. Move archive into Firefox's window to import your extension.
-If previous version of extension was already imported - firefox will replace it
+If previous version of extension was already imported - browser will replace it
