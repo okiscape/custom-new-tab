@@ -1,19 +1,20 @@
 {
   "manifest_version": 3,
-  "name": "Custom New Tab",
+  "name": "Pretty New Tab",
   "author": "okiscape",
-  "homepage_url": "https://github.com/okiscape/custom-new-tab",
-  "version": "0.5",
-  "description": "Replaces the new tab page with a custom one.",
+  "homepage_url": "https://github.com/okiscape/pretty-new-tab",
+  "version": "1.0",
+  "description": "Replaces the browser New-tab page with a new pretty one.",
   "chrome_url_overrides": {
-    "newtab": "page/index.html"
+    "newtab": "page/new-tab/index.html"
   },
+  "options_page": "page/settings/settings.html",
   "permissions": [
     "storage"
   ],
   "browser_specific_settings": {
     "gecko": {
-      "id": "okiscape-newtab@okiscape"
+      "id": "pretty-new-tab@okiscape"
     }
   }
 }

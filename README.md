@@ -1,19 +1,24 @@
-# Custom New-Tab
-> Firefox(& etc)/Chromium-based browsers extention that allows you to create your own page and set it as a "new tab" page.
+# Pretty New Tab
+> Browser extension that replaces New-Tab with a new pretty one.
 
-## How it works
-Extension uses its internal pages for rendering by default. So, if you want to change your newbuilt extension even a little bit - you have to rebuilt it (or open it as zip and edit).
-
-### Default page
+### About "New Tab" page
 The default page in `./page/` written using `vue` + `vite`.
-It's have some features: 
- - Date & time(with cool digit transitions)
- - To-do list(works across tabs via `Pinia` stores) (click to your To-do to delete it)
- - Wallpapers shuffle on reload(or new tab) (wallpapers that in `./page/wallpapers/`, so you can just drop pictures in this folder)
+It have a simple logic for wallpaper random display, parallax effect(only for background), support for settings, and for pretty digit transitions.
 
-**Preview:**
-![Default page preview](.readme/pagepreview.gif)
+### About "Settings" page
+On Settings page you can:
+1. Toggle seconds display
+2. Toggle parallax effect
+3. Manage added backgrounds
+4. Edit Custom CSS for New-Tab page
+*You can open settings in your browser extensions settings*
 
+## Previews
+**New-Tab page**
+![New-Tab GIF](.readme/page-preview.gif)
+
+**Settings page**
+![Settings page screenshot](.readme/settings-preview.png)
 
 ## Customize
 To replace default page with your own you should:
@@ -25,4 +30,4 @@ It's content should look like:\
  | - `page/`\
  | + - `index.html`
 3. Move archive into Firefox's window to import your extension.
-If previous version of extension was already imported - browser will replace it
+If previous version of extension was already imported - browser will replace it.
