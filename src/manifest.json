@@ -6,9 +6,9 @@
   "version": "1.0",
   "description": "Replaces the browser New-tab page with a new pretty one.",
   "chrome_url_overrides": {
-    "newtab": "page/new-tab/index.html"
+    "newtab": "pages/index.html"
   },
-  "options_page": "page/settings/settings.html",
+  "options_page": "pages/settings.html",
   "permissions": [
     "storage"
   ],

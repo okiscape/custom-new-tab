@@ -17,6 +17,7 @@
     },
     "types": [
       "vite/client"
-    ]
+    ],
+    "allowJs": true
   }
 }

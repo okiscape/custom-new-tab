@@ -113,7 +113,9 @@ const timeDigits = computed(() => ({
   seconds: seconds.value.split('')
 }));
 
-const blockOrder = computed(
+type TimeBlock = 'hours' | 'minutes' | 'seconds';
+
+const blockOrder = computed<TimeBlock[]>(
     () => {
         if (settings.value.showSeconds) {
             return ['hours', 'minutes', 'seconds'];
@@ -122,12 +124,11 @@ const blockOrder = computed(
         }
     }
 );
-type TimeBlock = (typeof blockOrder.value)[number];
 const digitsPerBlock = 2;
 
 const getDigitDelay = (block: TimeBlock, idx: number) => {
   const blockIndex = blockOrder.value.indexOf(block);
-  const base = (blockOrder.length - blockIndex - 1) * digitsPerBlock;
+  const base = (blockOrder.value.length - blockIndex - 1) * digitsPerBlock;
   const digitOffset = digitsPerBlock - idx - 1;
   return `${(base + digitOffset) * 0.03}s`;
 };
